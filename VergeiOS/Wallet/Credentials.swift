@@ -13,8 +13,8 @@ public class Credentials {
         case invalidDeriver(value: String)
     }
 
-    var seed: Data = Data()
-    var network: Network = .mainnetXVG
+    private var seed: Data = Data()
+    private var network: Network = .mainnetXVG
 
     init(mnemonic: [String], passphrase: String, network: Network = .mainnetXVG) {
         self.seed = Mnemonic.seed(mnemonic: mnemonic, passphrase: passphrase)

@@ -102,6 +102,8 @@
 		A3408E4C217333B5009F0C9D /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3408E4B217333B5009F0C9D /* NotificationViewController.xib */; };
 		A3408E56217687F9009F0C9D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3408E55217687F9009F0C9D /* Charts.framework */; };
 		A3408E5821768AF4009F0C9D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3408E5721768AF4009F0C9D /* Date+Extensions.swift */; };
+		A34729CC227F135B00EA5F7B /* CredentialsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34729CB227F135B00EA5F7B /* CredentialsTest.swift */; };
+		A34729CE227F7A7F00EA5F7B /* FiatRateTickerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34729CD227F7A7F00EA5F7B /* FiatRateTickerTest.swift */; };
 		A3549DD521B9DB5A0091EAC3 /* PassphraseConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3549DD421B9DB5A0091EAC3 /* PassphraseConfirmationViewController.swift */; };
 		A35F3D82211CE738006068A2 /* ApplicationRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F3D81211CE738006068A2 /* ApplicationRepositoryTest.swift */; };
 		A364727E217C7787001B1B18 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364727D217C7787001B1B18 /* ContactTableViewController.swift */; };
@@ -450,6 +452,8 @@
 		A3408E4B217333B5009F0C9D /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		A3408E55217687F9009F0C9D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		A3408E5721768AF4009F0C9D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A34729CB227F135B00EA5F7B /* CredentialsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsTest.swift; sourceTree = "<group>"; };
+		A34729CD227F7A7F00EA5F7B /* FiatRateTickerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatRateTickerTest.swift; sourceTree = "<group>"; };
 		A3549DD421B9DB5A0091EAC3 /* PassphraseConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassphraseConfirmationViewController.swift; sourceTree = "<group>"; };
 		A35F3D81211CE738006068A2 /* ApplicationRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRepositoryTest.swift; sourceTree = "<group>"; };
 		A364727D217C7787001B1B18 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
@@ -866,6 +870,8 @@
 			isa = PBXGroup;
 			children = (
 				A3D3A068215661C20018599A /* AddressValidatorTest.swift */,
+				A34729CB227F135B00EA5F7B /* CredentialsTest.swift */,
+				A34729CD227F7A7F00EA5F7B /* FiatRateTickerTest.swift */,
 				A30D27972260D165000377F8 /* TxTransponderTest.swift */,
 			);
 			path = Wallet;
@@ -1097,23 +1103,23 @@
 		A37641112108E79800E04521 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3AA220721657BBE00160576 /* AVFoundation.framework */,
+				A33B759D21A5CDD400030CCF /* BitcoinKit.framework */,
+				A3408E55217687F9009F0C9D /* Charts.framework */,
+				A302D3082120374C00EA8091 /* CoreGraphics.framework */,
+				A3647287217E604B001B1B18 /* CoreStore.framework */,
+				A33B759321A22F5A00030CCF /* CryptoSwift.framework */,
+				A3647285217CF9A9001B1B18 /* Eureka.framework */,
+				A3B2E25A214836B500C31719 /* HGPlaceholders.framework */,
+				CA522EA6220318B000331B0F /* IntentsUI.framework */,
+				A338E69F210DC037000D44EE /* IQKeyboardManagerSwift.framework */,
+				A3256669211B9ABB006FB08A /* KeychainSwift.framework */,
+				A398B205212AFF71004ACB73 /* LocalAuthentication.framework */,
+				A338E6CD21110A09000D44EE /* QRCode.framework */,
+				A325665E211A2219006FB08A /* SwiftyJSON.framework */,
 				A3E32B17225D52D9001A8B0E /* Swinject.framework */,
 				A3E32B16225D52D9001A8B0E /* SwinjectStoryboard.framework */,
-				A33B759D21A5CDD400030CCF /* BitcoinKit.framework */,
-				A33B759321A22F5A00030CCF /* CryptoSwift.framework */,
-				A3647287217E604B001B1B18 /* CoreStore.framework */,
-				A3647285217CF9A9001B1B18 /* Eureka.framework */,
-				A3408E55217687F9009F0C9D /* Charts.framework */,
 				A3408E492171FE0B009F0C9D /* Tor.framework */,
-				A3AA220721657BBE00160576 /* AVFoundation.framework */,
-				A3B2E25A214836B500C31719 /* HGPlaceholders.framework */,
-				A398B205212AFF71004ACB73 /* LocalAuthentication.framework */,
-				A302D3082120374C00EA8091 /* CoreGraphics.framework */,
-				A3256669211B9ABB006FB08A /* KeychainSwift.framework */,
-				A325665E211A2219006FB08A /* SwiftyJSON.framework */,
-				A338E6CD21110A09000D44EE /* QRCode.framework */,
-				A338E69F210DC037000D44EE /* IQKeyboardManagerSwift.framework */,
-				CA522EA6220318B000331B0F /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1759,6 +1765,8 @@
 			files = (
 				A30D27982260D165000377F8 /* TxTransponderTest.swift in Sources */,
 				A3D3A069215661C20018599A /* AddressValidatorTest.swift in Sources */,
+				A34729CC227F135B00EA5F7B /* CredentialsTest.swift in Sources */,
+				A34729CE227F7A7F00EA5F7B /* FiatRateTickerTest.swift in Sources */,
 				A35F3D82211CE738006068A2 /* ApplicationRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
